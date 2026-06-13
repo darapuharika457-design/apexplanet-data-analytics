@@ -8,6 +8,21 @@ Perform data loading, exploration, cleaning, visualization, and preliminary anal
 
 ---
 
+## Tools Used
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Plotly
+* SQLAlchemy
+* OpenPyXL
+* Jupyter Notebook
+* GitHub
+
+---
+
 ## Dataset
 
 **SampleSuperstore.csv**
@@ -29,150 +44,118 @@ This dataset is widely used for practicing data analysis, data cleaning, visuali
 
 ---
 
-## Tools Used
-
-* Python
-* Pandas
-* NumPy
-* Matplotlib
-* Seaborn
-* Plotly
-* SQLAlchemy
-* OpenPyXL
-* Jupyter Notebook
-* GitHub
-
----
-
 ## Work Completed
 
 ### Day 1–2: Data Loading and Exploration
 
-* Verified required Python libraries
-* Loaded dataset using Pandas
+* Imported the dataset into a Pandas DataFrame
 * Explored dataset structure
-* Checked rows and columns using `df.shape`
+* Checked rows and columns
 * Examined column names
-* Inspected data types using `df.dtypes`
-* Generated dataset information using `df.info()`
-* Created descriptive statistics using `df.describe()`
+* Inspected data types
+* Generated descriptive statistics
 * Calculated total and average sales
 * Calculated total and average profit
 * Performed category-wise sales analysis
 * Performed category-wise profit analysis
+* Conducted exploratory data analysis (EDA)
 
 ---
 
-### Day 3–4: Data Cleaning and Quality Assessment
+### Day 3–4: Data Cleaning and Data Quality Assessment
 
-* Checked missing values using `df.isnull().sum()`
+* Checked missing values
 * Verified dataset completeness
-* Checked duplicate records using `df.duplicated().sum()`
-* Removed duplicate records
+* Checked duplicate records
+* Removed duplicate rows
 * Converted date columns to datetime format
 * Inspected overall data quality
-* Performed outlier detection using IQR method
-* Identified 1167 outliers in Sales column
-* Created cleaned dataset
-* Exported cleaned dataset as CSV file
+* Performed outlier detection using the IQR method
+* Detected 1167 outliers in the Sales column
+* Created a cleaned dataset
+* Exported cleaned dataset as CSV
 
 ---
 
-### Day 5: Data Visualization and Insights
+### Day 5: Data Visualization and Business Insights
 
-#### Sales Distribution Analysis
+Created the following visualizations:
 
-* Created Histogram of Sales
-* Analyzed distribution of sales values
-* Identified skewed sales distribution
+1. Sales Distribution Histogram
+2. Sales Boxplot
+3. Total Sales by Category
+4. Total Profit by Category
+5. Correlation Heatmap
+6. Sales vs Profit Scatter Plot
+7. Monthly Sales Trend Line Chart
 
-#### Outlier Analysis
-
-* Created Boxplot of Sales
-* Visualized outliers in sales data
-
-#### Category Analysis
-
-* Created Category-wise Sales Bar Chart
-* Compared sales performance across categories
-* Identified Technology as the highest sales category
-
-#### Profit Analysis
-
-* Created Category-wise Profit Bar Chart
-* Compared profitability across categories
-* Identified Technology as the highest profit category
-
-#### Correlation Analysis
-
-* Created Correlation Heatmap
-* Analyzed relationships among:
-
-  * Sales
-  * Quantity
-  * Discount
-  * Profit
-* Identified negative correlation between Discount and Profit
-
-#### Sales vs Profit Analysis
-
-* Created Scatter Plot of Sales vs Profit
-* Analyzed relationship between sales and profitability
-* Identified profitable and loss-making transactions
+Performed visual analysis and generated business insights from the dataset.
 
 ---
 
-## Files
+## Key Insights
 
+### 1. Technology Category Generated the Highest Sales
+
+Among all product categories, Technology recorded the highest total sales, making it the strongest revenue-generating category in the dataset.
+
+### 2. Technology Category Generated the Highest Profit
+
+Technology not only achieved the highest sales but also produced the highest profit, indicating strong business performance and profitability.
+
+### 3. Sales Data Contains Significant Outliers
+
+Using the IQR method, 1167 outliers were detected in the Sales column. These outliers represent unusually large transactions that may significantly influence overall sales analysis.
+
+### 4. Discounts Negatively Impact Profitability
+
+The correlation analysis revealed a negative relationship between Discount and Profit. Higher discounts generally reduce profit margins and can even result in losses.
+
+### 5. Sales Show an Overall Upward Trend Over Time
+
+The Monthly Sales Trend analysis showed fluctuations across months, but overall sales increased toward the end of the period. The highest sales were recorded in late 2017, indicating business growth over time.
+
+---
+
+## Files Included
+
+* README.md
 * Task1_Data_Loading_and_EDA.ipynb
 * SampleSuperstore.csv
 * SampleSuperstore_Cleaned.csv
-* README.md
 
 ---
 
-## Key Learning Outcomes
+## Learning Outcomes
 
-* Data Loading with Pandas
-* Dataset Exploration Techniques
-* Data Cleaning and Preprocessing
-* Missing Value Analysis
-* Duplicate Record Detection
-* Outlier Detection using IQR
-* Data Type Conversion
-* Descriptive Statistics
-* Business Data Analysis
-* Data Visualization with Matplotlib
-* Correlation Analysis
-* Profitability Analysis
-* Scatter Plot Interpretation
-* Documentation Best Practices
-* GitHub Repository Management
+Through this project, I gained practical experience in:
+
+* Data loading using Pandas
+* Data exploration and profiling
+* Data cleaning techniques
+* Missing value analysis
+* Duplicate record detection
+* Data type conversion
+* Outlier detection using IQR
+* Data visualization using Matplotlib and Seaborn
+* Correlation analysis
+* Trend analysis
+* Business insight generation
+* GitHub repository management
+* Project documentation
 
 ---
 
-## Status
+## Project Status
 
-### Task 1 Progress
+* Day 1–2 Completed
+* Day 3–4 Completed
+* Day 5 Completed
+* Dataset Cleaned and Exported
+* Visualizations Created
+* Business Insights Generated
+* Notebook Documented
+* GitHub Repository Updated
 
-- Completed data loading and dataset exploration
-   
-- Performed data cleaning and preprocessing
-  
-- Checked missing values and duplicate records
-  
-- Conducted outlier detection using the IQR method
-  
-- Exported cleaned dataset
-  
-- Created multiple data visualizations
-  
-- Generated business insights from EDA
-  
-- Documented all notebook activities
-  
-- Updated GitHub respository with project files
+### Task 1 Completed Successfully
 
-  ### Current Status
-
-Task 1 is progressing successfully according to the internship schedule. Data exploration, cleaning, and visualization activities have been completed, and the project repository has been updated with all deliverables.
